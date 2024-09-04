@@ -1,3 +1,6 @@
+# # # ================================================================================================
+# EXERCICIO 1
+
 # # #  a = float(input(f"digite um numero"))
 # # #  b = float(input(f"digite um numero"))
 
@@ -9,7 +12,7 @@
 
 
 # # # ================================================================================================
-
+# EXERCICIO 2
 
 # # data = int(input("digite o ano de nascimento:"))
 
@@ -21,7 +24,7 @@
 
 
 # # # ================================================================================================
-
+# EXERCICIO 3
 # # senha = float(input(f"Digite a senha:"))
 
 # # if senha == 1234:
@@ -32,7 +35,7 @@
     
     
 # # # ================================================================================================
-
+# EXERCICIO 4
 # maças = int(input(f"Quantas Maças Você Deseja:"))
 
 # if maças <= 12:
@@ -42,7 +45,7 @@
 
 
 # # ================================================================================================
-
+# EXERCICIO 5
 
 #  def ordenar_tres_valores(a, b, c):
 #    if a <= b and a <= c:
@@ -74,7 +77,7 @@
 #     print("Por favor, insira apenas números válidos.")
 
 # # ================================================================================================
-
+# EXERCICIO 6
 # Sexo = str(input(f"Escolha seu Sexo:"))
 # altura = float(input(f"Digite sua altura:"))
 
@@ -84,8 +87,8 @@
 #     Sexo == "feminino"
 #     print(f"seu peso é: {altura * 62.1 -44.7}")
 
-
-
+# # ================================================================================================
+# EXERCICIO 7 E 8
 # lados = int(input(f"DIGITE A QUANTIDADE DE LADOS:"))
 # medida = float(input(f"DIGITE OS CENTIMETROS DOS LADOS"))
 
@@ -109,6 +112,7 @@
 #     print(f"vai ter area n zé")
     
 # # ================================================================================================
+# EXERCICIO 9
 
 # a = float(input("Digite o primeiro valor: "))
 # b = float(input("Digite o segundo valor: "))
@@ -123,11 +127,89 @@
 
     
 # # ================================================================================================
+# EXERCICIO EXTRA
+
+# x = (input(f"Digite sua letra"))
+
+# if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
+#     print(f"Vogal")
+# else:
+#     print(f"consoante")
 
 
-x = (input(f"Digite sua letra"))
+# # ================================================================================================
+# EXERCICIO 10
+# while True:
+#     Lado_a = float(input(f"Digite o valor do Primeiro lado:"))
+#     Lado_b = float(input(f"Digite o valor do segundo lado:"))
+#     Lado_c = float(input(f"Digite o valor do terceiro lado:"))
 
-if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
-    print(f"Vogal")
-else:
-    print(f"consoante")
+#     print(f'='*26)
+
+#     if (Lado_a + Lado_b > Lado_c) and (Lado_a + Lado_c > Lado_b) and (Lado_b + Lado_c > Lado_a):
+#         if Lado_a == Lado_b == Lado_c:
+#             print(f"essa porra é um Triângulo Equilátero")
+#         elif Lado_a == Lado_b or Lado_b == Lado_c or Lado_a == Lado_c:
+#             print(f"essa porra é um Triângulo Isósceles")
+#         else:
+#             print(f"essa porra é um Triângulo Escaleno")
+#     else:
+#         print("Os valores fornecidos não formam um triângulo válido.")
+
+#     print(f'='*26)
+
+#     repetir = int(input(f"Deseja fazer outra verificação. \n1)Sim \n2)Não"))
+
+#     print(f'='*26)
+
+#     if repetir != 1:
+#         print(f"Encerrando...")
+#         break
+#     else:
+#         print(f"Recomeçando")
+
+#     print(f'='*26)
+
+# # ================================================================================================
+# EXERCICIO 11
+
+# Versão feita sozinho apenas consultando ajuda em alguns site
+
+# anguloa = float(input(f"Digite o primeiro angulo:"))
+# angulob = float(input(f"Digite o segundo angulo:"))
+# anguloc = float(input(f"Digite o terceiro angulo:"))
+
+# if anguloa + angulob + anguloc == 180:
+#     if anguloa == 90 or angulob == 90 or anguloc ==90:
+#         print(f"é um Triângulo Retângulo")
+#     elif anguloa > 90 or angulob > 90 or anguloc > 90:
+#         print(f"é um Triângulo Obtusângulo")
+#     else:
+#         print(f"é um Triângulo Acutângulo")
+# else:
+#     print(f"Os valores não formam um triangulo")
+
+#Versão aprimorada pelo GPT
+
+# Recebe os ângulos do usuário
+
+# anguloa = float(input("Digite o primeiro ângulo: "))
+# angulob = float(input("Digite o segundo ângulo: "))
+# anguloc = float(input("Digite o terceiro ângulo: "))
+
+# # Verifica se os ângulos são válidos
+# if anguloa <= 0 or angulob <= 0 or anguloc <= 0:
+#     print("Os ângulos devem ser positivos.")
+# elif anguloa + angulob + anguloc != 180:
+#     print("Os valores não formam um triângulo.")
+# else:
+#     # Determina o tipo do triângulo
+#     if anguloa == 90 or angulob == 90 or anguloc == 90:
+#         print("É um triângulo retângulo.")
+#     elif anguloa > 90 or angulob > 90 or anguloc > 90:
+#         print("É um triângulo obtusângulo.")
+#     else:
+#         print("É um triângulo acutângulo.")
+
+# # ================================================================================================
+
