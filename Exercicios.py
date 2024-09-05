@@ -25,13 +25,14 @@ else:
 
 # # # ================================================================================================
 # EXERCICIO 3
-senha = float(input(f"Digite a senha:"))
+tentativa = int(input(f"Digite a senha:"))
 
-if senha == 1234:
-    print(f"ACESSO PERMITIDO")
+senha = 1234
+
+if tentativa == senha:
+    print(f"...Acesso Permitido...")
 else:
-    senha != 1234
-    print(f"ACESSO NEGADO")
+    print(f"...Acesso Negado...")
     
     
 # # # ================================================================================================
