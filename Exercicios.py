@@ -83,26 +83,20 @@ else:
 # # ================================================================================================
 # EXERCICIO 7 E 8
 lados = int(input(f"DIGITE A QUANTIDADE DE LADOS:"))
-medida = float(input(f"DIGITE OS CENTIMETROS DOS LADOS"))
-
-if lados == 3:
-    print(F"Triangulo")
-    print(f"O valor da área é: {medida*medida/2}")
-    
-elif lados == 4:
-    print(f"Quadrado")
-    print(f"O valor da área é: {medida**2}")
-    
-elif lados < 3:
-    print(f"não é n poligono")
-    
-elif lados == 5
-    print(f"Pentagono")
-    print(f"vai ter area n zé")
-    
-else: 
-    print(f"poligono não encontrado")
-    
+if lados < 3:
+    print(f"não é um poligono!")
+elif lados < 5:
+    print(f"não é um poligono!")
+else:
+    comprimento = float(input(f"Diga o tamanho do lado"))
+    area = lados*comprimento
+    if lados == 3:
+        forma = 'triangulo'
+    elif lados == 4:
+        forma = 'quadrado'
+    else:
+        forma = 'Pentagono'
+print(f"O poligono é um {forma} e tem {area}cm")
 # # ================================================================================================
 # EXERCICIO 9
 
