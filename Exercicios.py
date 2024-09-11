@@ -75,10 +75,10 @@ Sexo = str(input(f"Escolha seu Sexo:"))
 altura = float(input(f"Digite sua altura:"))
 
 if Sexo == "Masculino":
-    print(f"seu peso é: {altura * 72.7 -58}")
+    print(f"seu peso é: {altura * 72.7 -58:.2f}")
 else:
     Sexo == "feminino"
-    print(f"seu peso é: {altura * 62.1 -44.7}")
+    print(f"seu peso ideal é: {altura * 62.1 -44.7:.2f}")
 
 # # ================================================================================================
 # EXERCICIO 7 E 8
@@ -96,13 +96,12 @@ elif lados == 4:
 elif lados < 3:
     print(f"não é n poligono")
     
-elif lados > 5:
-    print(f"poligono não encontrado")
-    
-else:
-    lados == 5
+elif lados == 5
     print(f"Pentagono")
     print(f"vai ter area n zé")
+    
+else: 
+    print(f"poligono não encontrado")
     
 # # ================================================================================================
 # EXERCICIO 9
@@ -141,11 +140,11 @@ while True:
 
     if (Lado_a + Lado_b > Lado_c) and (Lado_a + Lado_c > Lado_b) and (Lado_b + Lado_c > Lado_a):
         if Lado_a == Lado_b == Lado_c:
-            print(f"essa porra é um Triângulo Equilátero")
+            print(f"isso é um Triângulo Equilátero")
         elif Lado_a == Lado_b or Lado_b == Lado_c or Lado_a == Lado_c:
-            print(f"essa porra é um Triângulo Isósceles")
+            print(f"isso é um Triângulo Isósceles")
         else:
-            print(f"essa porra é um Triângulo Escaleno")
+            print(f"isso é um Triângulo Escaleno")
     else:
         print("Os valores fornecidos não formam um triângulo válido.")
 
