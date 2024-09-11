@@ -37,12 +37,12 @@ else:
     
 # # # ================================================================================================
 # EXERCICIO 4
-maças = int(input(f"Quantas Maças Você Deseja:"))
-
-if maças <= 12:
-    (print(f"{maças*0.30}"))
-else:
-    (print(f"{maças*0.25}"))
+qtd = int(input(f"digite quantas maças quer comprar"))
+preco = 0.30
+if qtd >= 12:
+    preco = 0.25
+total = preco*qtd
+print(f"você gastou R${total:.2f} em {qtd} maçãs a R${preco:.2f} cada")
 
 
 # # ================================================================================================
