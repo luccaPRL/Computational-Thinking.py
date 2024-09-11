@@ -67,6 +67,53 @@ else:
             print(f"{c}, {a}, {b}") 
         else:
              print(f"{c}, {b}, {a}") 
+             
+             
+             
+#outra versão  do mesmo exercicio
+a = int(input(f"Digite o primeiro valor:"))
+b = int(input(f"Digite o segundo valor:"))
+c = int(input(f"Digite o terceiro valor:"))
+
+maior = a
+medio = b
+menor = c
+
+if b > a and b > c:
+    maior = b
+    if a > c:
+        medio = a
+        menor = c
+    elif c > a:
+        medio = c 
+        menor = a
+elif c > a and c > b:
+    maior = c
+    if a > b:
+        medio = a
+        menor = b
+    elif b > a:
+        medio = b
+        menor = a
+print(f"{menor} {medio} {maior}")
+
+# mais uma versão 
+a = int(input(f"Digite o primeiro valor:"))
+b = int(input(f"Digite o segundo valor:"))
+c = int(input(f"Digite o terceiro valor:"))
+
+maior = a
+if b > maior:
+    maior = b
+if c > maior:
+    maior = c
+menor = a
+if b < menor:
+    menor = b
+if c < menor:
+    menor = c
+meio = a + b + c - menor - maior
+print(f"{menor} {meio} {maior}")
 
 
 # # ================================================================================================
@@ -103,13 +150,27 @@ print(f"O poligono é um {forma} e tem {area}cm")
 a = float(input("Digite o primeiro valor: "))
 b = float(input("Digite o segundo valor: "))
 c = float(input("Digite o terceiro valor: "))
-
-if a > b and c:
-    print(f"{a}")
-elif b > a and c:
-    print(f"{b}")
+if a != b and b != c and a != c:
+    if a > b and c:
+        print(f"{a}")
+    elif b > c:
+        print(f"{b}")
+    else:
+        print(f"{c}")
 else:
-    print(f"{c}")
+    print(f"há numeros iguais")
+    
+#Versão sem elif e else:
+
+a = float(input("Digite o primeiro valor: "))
+b = float(input("Digite o segundo valor: "))
+c = float(input("Digite o terceiro valor: "))
+maior = a
+if b > maior:
+    maior = b
+if c > maior:
+    maior = c
+print(f"{maior}")
 
     
 # # ================================================================================================
