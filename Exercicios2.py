@@ -141,15 +141,15 @@
 
 
 ######## Exercicio 11 ########
-i=1
-num = int(input("digite um valor"))
-while True:
-    i+=1
-    if num % i == 0:
-        print("Não é primo")
-    elif i >= num**(1/2):
-        print("é primo")
-        break
+# i=1
+# num = int(input("digite um valor"))
+# while True:
+#     i+=1
+#     if num % i == 0:
+#         print("Não é primo")
+#     elif i >= num**(1/2):
+#         print("é primo")
+#         break
 
 
 
